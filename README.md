@@ -1,1 +1,3 @@
-# the_odin_project
+# The Odin Project
+
+A repo for storing some Odin Project Exercises
