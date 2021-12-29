@@ -1,0 +1,224 @@
+/*
+
+El propósito de estos estilos es familiarizarme con algunos selectores y características de CSS.
+
+Posiblemente el uso de selectores anidados es excesivo y sería más conveniente una estructura con más declaración
+de clases en HTML, además de que algunas soluciones pueden parecer raras.
+
+*/
+
+/* Variables */
+
+:root {
+	--azulOscuro:  #1f2937;
+	--azulClarito: #3b82f6;
+}
+
+/* Stylng */
+
+
+* {
+	/*
+	border: 1px solid red;
+	margin: 3px;
+	padding: 0;
+	*/
+	font-family: sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+}
+
+
+
+/*
+
+4 main sections
+
+90vh is used so the user can notice content below to scroll down.
+
+vw & vh are relative to viewport (browser window size)
+
+*/
+
+body > div {
+	min-height: 90vh;
+	padding: 0 10vw;
+	display: flex;
+	flex-direction: column;
+}
+
+
+#above-the-fold {
+	padding-top: 1vh;
+	background-color: var(--azulOscuro);
+	color: #f9fafb;
+}
+
+#info-blocks {
+	display: flex;
+}
+
+#testimonials {
+	background-color: #e5e7eb;
+	color: var(--azulOscuro);
+	justify-content: center;
+}
+
+#footer-sandbox {
+	min-height: 50vh;
+}
+
+/* Above the fold */
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 24px;
+	color: #f9faf8;
+	font-weight: 800;
+}
+
+.top-links {
+	display: flex;
+	gap: 1vw;
+	font-size: 18px;
+	color: #e5e7eb;
+}
+
+.above-content {
+	display: flex;
+	flex-direction: row;
+	margin: auto 0;
+	gap: 2%;
+}
+
+.claim > div:nth-child(1) {
+	font-size: 48px;
+	color: #f9faf8;
+	font-weight: bold;
+}
+
+.claim > div:nth-child(2) {
+	font-size: 18px;
+	color: #e5e7eb;
+}
+
+.signup {
+	padding: 2vh 0;
+}
+
+.signup > a:first-child {
+	color: white;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	background-color: var(--azulClarito);
+	border-radius: 5px;
+}
+
+.above-content > .right {
+	background-color: #6d747d;
+	min-width: 50%;
+}
+
+/* info blocks */
+
+#info-blocks > div:first-child {
+	margin: 10vh 0 5vh 0;
+}
+
+.info-blocks-container {
+	display: flex;
+    justify-content: space-evenly;
+}
+
+#info-blocks > div:first-child {
+	font-size: 36px;
+	font-weight: bold;
+	color: #1f2937;
+	align-self: center;
+}
+
+.info-square {
+	max-width: 12vw;
+}
+
+.info-square > div:first-child {
+	border: 4px solid var(--azulClarito);
+	border-radius: 12px;
+	margin-bottom: 1vh;
+	min-height: 25vh;
+    min-width: 12vw;
+;
+}
+
+/* testimonials */
+
+#testimonials blockquote {
+	font-size: 36px;
+	font-style: italic;
+	color: var(--azulOscuro);
+}
+
+.quote-author {
+    align-self: self-end;
+    margin-right: 5vh;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--azulOscuro);
+
+}
+
+/* footer stuff */
+
+.call-to-action {
+	margin: auto 0;
+	min-height: 20vh;
+	display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: var(--azulClarito);
+    color: white;
+}
+
+.call-to-action > div {
+	margin: auto;
+}
+
+.call-to-action > div:first-child {
+	/* white-space: pre;  Allows for breaking lines in HTML without using P or BR */
+    /* tab-size: 0; Since white-space:  pre computes also tabs, it allows to transform tabs into 0 space */
+    
+}
+
+.call-to-action > div:nth-child(1) > div:nth-child(1) {
+	font-weight: bold;
+}
+
+.call-to-action > div:nth-child(2) {
+	border-radius: 10px;
+	border: 2px solid white;
+	padding: 0.3em 1.5em;
+}
+
+footer {
+	background-color: var(--azulOscuro);
+	color: white;
+	width: calc(100% + 2*10vw); /* Overriding padding from parent */
+	height: 10vh;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
