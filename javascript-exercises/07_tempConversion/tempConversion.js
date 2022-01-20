@@ -3,7 +3,7 @@ const ftoc = function farenheitToCelsius(fdegree) {
   // returns value rounded to 1 decimal
 
   let celsius = (fdegree-32) / 1.8;
-  let roundedCelsius = celsius.round(1);
+  let roundedCelsius = redondeo(celsius, 1);
 
 };
 
@@ -12,13 +12,13 @@ const ctof = function celsiusToFarenheit(cdegree) {
   // returns value rounded to 1 decimal
 };
 
-function redondeo(numero, posiciones) {
+function redondeo(numero, longitud) {
   // Redondea un número con el método común a 1 decimal, siendo >= 5 un incremento.
   // Hay métodos como .round() y otros disponibles, el objeto de esta función es practicar.
 
     // Dividimos el número en dos partes.
     // El primer loop itera hasta el separador y coloca en la variable natural
-    // El segundo loop itera desde el separador y coloca en la variable decmal
+    // El segundo loop itera desde el separador y coloca en la variable decimal
 
   let cadena = numero.toString();
 
@@ -45,6 +45,18 @@ function redondeo(numero, posiciones) {
   };
 
     // Ejecutamos aproximación
+    // HAY QUE CONVERTIR LOS STRINGS EN NUMBER PARA PODER HACER LOS CALCULOS
+    // Solo he puesto la lógica baśica
+
+  let aproximado = "";
+
+  for (let i = decimal.lenght -1; i >= 0; i--) {
+    if (number(decimal[i]) >= 5 && i >= longitud -1) {
+      aproximado[i-1] = string(number(decimal[i-1]) + 1);
+    } else if (number(decimal[i]) < 5 && i >= longitud -1) {
+      
+    };
+  };
 
 
 
