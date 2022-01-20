@@ -1,0 +1,45 @@
+function redondeo(numero, longitud) {
+  // Redondea un número con el método común a 1 decimal, siendo >= 5 un incremento.
+  // Hay métodos como .round() y otros disponibles, el objeto de esta función es practicar.
+
+    // Dividimos el número en dos partes.
+    // El primer loop itera hasta el separador y coloca en la variable natural
+    // El segundo loop itera desde el separador y coloca en la variable decimal
+
+  let cadena = numero.toString();
+
+  let natural = "";
+  let decimal = "";
+
+  let lastIndex = 0;
+
+    // Iteramos HASTA el separador, y colocamos como parte natural
+
+  for (i of cadena) {
+    if (i != ".") {
+      natural += i;
+    } else {
+      lastIndex = i;
+      break;
+    };
+  };
+
+    // Iteramos DESDE el separador, y colocamos como parte decimal
+
+  for (i of cadena) {
+    if (i > lastIndex) {decimal += i};
+  };
+
+    // Ejecutamos aproximación
+
+  let aproximado = "";
+
+  let incremento = (number(decimal[longitud]) >= 5) ? 1 : 0;
+
+  for (let i = 0; i < longitud; i++) {
+    aproximado[i] = (i != longitud -1) ? decimal[i] : string(number(decimal[i]) + incremento)
+  };
+
+
+
+}
