@@ -10,14 +10,17 @@ This script is NOT resembling the code in the JS30 challenge video
 const keyArea = document.querySelectorAll(".key");
 
 for (element of keyArea) {
-	element.addEventListener('transitionend', removeTransition);
+	const dataKey = element.getAttributeNode("data-key").value;
+
+	// Why a function call inside an anonymous function?
+	// This guy happily explains it to you! 
+	// https://www.reddit.com/r/learnprogramming/comments/siv73i/i_cant_figure_out_this_behavior_on/
+	element.addEventListener("click", () => fnKey(dataKey));
 };
 
-window.addEventListener("keydown", fnKey)
-
-function fnKey(e) {
+function fnKey(dataKey) {
 	// Calling fadein css
-	const dataKeyString = "[data-key='" + e.keyCode + "']";
+	const dataKeyString = "[data-key='" + dataKey + "']";
 	const currentElement = document.querySelector("div" + dataKeyString);
 	currentElement.classList.add("playing");
 	
@@ -29,8 +32,5 @@ function fnKey(e) {
 	audioFile.currentTime = 0;
 
 	// Calling fadeout css
-	// Done with RemoveTransition();
-};
-function removeTransition(e) {
-	this.classList.remove("playing");
+	//currentElement.classList.remove("playing");
 };
