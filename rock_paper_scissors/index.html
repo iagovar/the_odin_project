@@ -4,9 +4,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="module" src="js/logic.js"></script>
+	<script type="module" src="js/ui.js"></script>
 </head>
 <body>
-	<script src="js/main.js"></script>
-
+	<div id="header"></div>
+		<h1>Piedra, Papel, Tijera</h1>
+		<p></p>
+	<div id="main"></div>
+		<div id="howmany"></div>
+			Selecciona el número de turnos que quieres jugar:
+			<input type="number" name="howmany" value="5">
+		<div id="rspbutons">
+			<button class="rock">Piedra</button>
+			<button class="paper">Papel</button>
+			<button class="scissors">Tijera</button>
+		</div>
+		<div id="score">
+			<div class="thisround"></div>
+		Puntuaciones:
+			<div class="scoretable">
+				Humano | Máquina
+				<div class="computer"></div>
+				<div class="human"></div>
+			</div>
+		</div>
+	<div id="footer"></div>
 </body>
 </html>

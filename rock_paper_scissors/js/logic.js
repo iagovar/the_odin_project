@@ -1,17 +1,22 @@
+import {getMaxTurns, thisRound} from "./ui.js";
+
 // Global variables
 
-let TURN = 0 		// Current turn
-const MAXTURNS = 5	// Max number of turns
-let HSCORE = 0		// Human score count
-let MSCORE = 0		// Machine score count
+let TURN = 0 					// Current turn
+let MAXTURNS = getMaxTurns();	// Max number of turns, see ui.js
+let HSCORE = 0					// Human score count
+let MSCORE = 0					// Machine score count
 
 const PPLAYS = ["Rock", "Paper", "Scissors"] // Possibility space
 
 // Main loop
 
+// TODO: CAMBIAR A FUNCION DESDE EL SCOPE PRINCIPAL
+// PARA EVITAR LA EJECUCIÓN EN LECTURA
+
 while (TURN < MAXTURNS) {
 
-	game();
+	//game();
 
 	TURN += 1;
 
@@ -20,7 +25,7 @@ while (TURN < MAXTURNS) {
 	// Who wins after all turns?
 
 if (HSCORE == MSCORE) {
-	console.log("It's finaly a draw!");
+	thisRound("It's finaly a draw!");
 } else if (HSCORE > MSCORE) {
 	console.log("You won! " + HSCORE + " to " + MSCORE + " against the machine!");
 } else if (HSCORE < MSCORE) {
@@ -30,10 +35,10 @@ if (HSCORE == MSCORE) {
 
 // Main function
 
-function game() {
+function game(inputFromUI) {
 	/* This function basically:
 
-	1. Is responsible for USER IMPUT.
+	1. Gets user imput from ui.js sendInput fn.
 	2. Integrates and calls all other logic functions.
 	3. DOES NOT count turns. This is done outside of any function, into the main loop.
 	
@@ -42,9 +47,9 @@ function game() {
 
 	// Asking imputs from the possibility space (PPLAYS)
 
-	let promptMsg = "Please, choose from " + PPLAYS.join([separator = ', ']);
+	//let promptMsg = "Please, choose from " + PPLAYS.join([separator = ', ']);
 
-	let userInput = prompt(promptMsg);
+	let userInput = inputFromUI;
 
 	let computerInput = computerPlay();
 
