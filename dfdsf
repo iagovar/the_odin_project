@@ -1,0 +1,149 @@
+[33mcommit 8f1a1fd12117c3f7c922a691c98e4e31a23b86c2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mrsp-ui[m[33m)[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Thu Feb 17 12:38:54 2022 +0100
+
+    Minor fixes in newlogic.js
+
+[33mcommit 77ca3620cb8f6cae1a97c77b8878625bcb9ebaf6[m[33m ([m[1;31morigin/rsp-ui[m[33m)[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Wed Feb 16 20:37:17 2022 +0100
+
+    First Rock Paper Scissors version
+
+[33mcommit 53cb561c57c4e29f636a9685d86a16f51f4aad66[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Wed Feb 16 20:34:18 2022 +0100
+
+    First Rock Paper Scissors version
+
+[33mcommit 53272a8e4581c3d8aec4ea3c1753be1033ba7e11[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Fri Feb 11 00:42:05 2022 +0100
+
+    changing from laptop to pc
+
+[33mcommit 58872217eedc99d15fc2e65097c4b4ef3ff5bee0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Mon Feb 7 21:25:15 2022 +0100
+
+    finished drumkit js
+
+[33mcommit 7ba3d66c315f74723c988b51e7f80d805dd3a2fe[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Tue Feb 1 14:31:01 2022 +0100
+
+    commit for changing to laptop
+
+[33mcommit 80a7daf3499a076267d39f6f3ffc2f075395f12c[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Thu Jan 27 15:52:29 2022 +0100
+
+    Finished Caesar cipher exercise
+
+[33mcommit 9e86736605fb711df9777fdb64b6badc6be02c84[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Mon Jan 24 15:15:08 2022 +0100
+
+    Terminado FindTheOldest
+
+[33mcommit c2c0506ee690a75248860c7ab2ff797f4066f1c6[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Sun Jan 23 20:57:16 2022 +0100
+
+    Finished getTheTitles, about js objects
+
+[33mcommit 7050895b4f36f3e23b8af5c6705eac3fa5a474eb[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Fri Jan 21 19:27:01 2022 +0100
+
+    terminado fibonacci
+
+[33mcommit e0017bf88a485d500b3dddee867dfbf6ccf63bd2[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Fri Jan 21 14:08:03 2022 +0100
+
+    terminados palindromos
+
+[33mcommit aec7695372a957d1407bae2602c11b64b7555d12[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Thu Jan 20 21:38:42 2022 +0100
+
+    Finalizados ejercicios de 08 calculator
+
+[33mcommit 63206ade53140c3fb14e6a2944c5082cc4c77316[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Thu Jan 20 20:03:46 2022 +0100
+
+    inclusión de leftovers
+
+[33mcommit c10b7ca20e5d729d28e87ce1f377e95cb1370ca9[m
+Author: Iagovar <iagovar@outlook.com>
+Date:   Thu Jan 20 20:02:14 2022 +0100
+
+    Finalizado 07, renuncio a mi propio método de rendondeo, por ahora.
+
+[33mcommit 5fb11a468074b479c72051274951201312e594e2[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Thu Jan 20 13:36:23 2022 +0100
+
+    trivial commit, just for change of computer
+
+[33mcommit 6c627999a91bd835f0e67870e4462073a137b0ca[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Jan 19 17:13:15 2022 +0100
+
+    Commit sin código relevante, por cambio a conexión móvil y suspension del thinkpad
+
+[33mcommit feaace17d1a9099f1fb47c60d912312478331567[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Jan 19 11:42:12 2022 +0100
+
+    adding some .json from the original repo and ignoring the original git system files
+
+[33mcommit 0f23f1d511f31f6a833444c1bfaa09ac0b3414a7[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Jan 19 11:40:11 2022 +0100
+
+    Addin JS exercises
+
+[33mcommit 8be45c2fb6958ca57cd103ab681793a58131bea0[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Mon Jan 10 17:12:06 2022 +0100
+
+    Readme temporal
+
+[33mcommit efc061f5a7086269ac49c5d54bf6a0b49d15a0c6[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Mon Jan 10 17:07:31 2022 +0100
+
+    Script version for console
+
+[33mcommit 62e24cdffc415a80b1f3db7fe8952edfdfb039fa[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Dec 29 12:15:33 2021 +0100
+
+    Updated CSS comment
+
+[33mcommit 81edf1f77c0acdece42eb4d8e46de3c2ef745e34[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Dec 29 01:25:33 2021 +0100
+
+    Primer commit completo de html y css
+
+[33mcommit 1d033e5eb96751669602835e450c332b2ff2402d[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Dec 22 21:23:28 2021 +0100
+
+    Subiendo el primer archivo markdown
+
+[33mcommit d6a435af0d882216a1b6ec2d825df61ea5bf0469[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Dec 22 21:10:52 2021 +0100
+
+    Update README.md
+
+[33mcommit 92bba88c0d9e119957ea95e2d55d752603b5b650[m
+Author: iagovar <iagovar@outlook.com>
+Date:   Wed Dec 22 21:09:57 2021 +0100
+
+    Initial commit
