@@ -5,7 +5,7 @@
 // Gloval vars
 
 let TURN = 0 					// Current turn
-let MAXTURNS = getMaxTurns() 	// Max number of turns
+let MAXTURNS = 0 				// Max number of turns
 let HSCORE = 0					// Human score count
 let MSCORE = 0					// Machine score count
 
@@ -25,6 +25,8 @@ function sendInput(e) {
 // Main logic
 
 function mainLoop(imputFromUI) {
+
+	MAXTURNS = getMaxTurns()
 
 	game(imputFromUI);
 
